@@ -1,0 +1,11 @@
+1.Go to setting clck right corner open settings.json
+ "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    }
+this is to have the emmet enabled inside the react component.
+
+2.Prettier
+3.Babel
+4.live server
+5.motoko
+6.remote wsl 
