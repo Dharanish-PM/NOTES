@@ -1,0 +1,79 @@
+git init
+git status 
+git add .
+git commit -m "saved" committing
+git log checkin the prev commits
+git restore --staged names.txt   remove from staged area after git add .
+
+git reset hashvalue (above this all commits get deleted)
+
+dont want to commit and want to store the changed temprarily mean 
+use 
+git add .
+git stash
+
+now need to bring thise changes visible means
+use 
+git stash pop
+
+no need these changes mean use 
+git stash clear
+
+Remote directry
+git remote add origin https://github.com/Dharanish-PM/EPICSENSE.git
+origin means name of url
+
+geting all urls linked
+git remote -v
+
+pushing to the repository
+git push origin master
+
+creating a branch
+git branch branch_name
+git checkout branch_name (head points here)
+
+merging the branch with the main 
+move to main branck
+git chekout main
+merge it 
+git merge branch_name
+
+
+after forking code=> url is called the upstream url
+origin url is personal url
+
+adding the upstream url 
+git remote -v (getting all url's)
+git remote add upstream forked_url
+
+one branch can have only one pull request so create bracnhes
+
+force push need to delete commit from the online repo
+git push origin branch_name -f 
+
+as you have forked and made changes in the branh and lets keep it is merged
+but the forked and upstream never be same
+to maintain them same
+we can use the button called fetch upstream
+or else
+
+git checkout main
+fetching all comits
+git fetch --all --prune
+git reset --hard upstream/main
+git push orugin main
+
+or
+
+git pull upstream main 
+git push origin main
+
+now the forked main branck and the upstream main branck look simiilar
+
+
+merging all comits to single
+git rebase -i hash
+pick or squah 
+change pick to s
+:X to exit
